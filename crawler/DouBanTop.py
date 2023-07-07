@@ -22,6 +22,8 @@ def parse_result(soup):
         yield film
 
 
+
+
 def handle(page):
     url = 'http://movie.douban.com/top250?start=' + str(page * 25) + '&filter='
     soup = request_soup(url)
